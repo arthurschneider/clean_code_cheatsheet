@@ -9,23 +9,37 @@
            html, body{
                 width: 100%;
                 height: 100%;
-                min-width: 100%;
-                margin: 0px;
-                padding: 0px;
+                margin: 0;
+                padding: 0;
+                background: black;
+            }
+
+            #container{
+                width: 80%;
+                height:80%;
+                position: absolute;
+                    margin:auto;
+                left: 0; right: 0;
+                top: 0; bottom: 0;
+                overflow: auto;
             }
 
             .headline{
+                padding-top: 20px;
                 text-align:center;
                 width: 350px;
                 margin: auto;
                 border-bottom: 3px solid white;
+                text-indent: 0;
             }
 
             .headline_black{
+                padding-top: 20px;
                 text-align:center;
                 width: 350px;
                 margin: auto;
                 border-bottom: 3px solid black;
+                text-indent: 0;
             }
 
             .center_principle{
@@ -37,8 +51,8 @@
                 float: right;
                 color: #ffffff;
                 position: absolute;
-                bottom: 0;
-                right: 20px;
+                bottom: 8px;
+                right: 40px;
             }
 
             .red{
@@ -66,10 +80,14 @@
                 color: #ffffff;
             }
 
+            .white{
+                background: #cccccc;
+                color: #000000;
+            }
+
             .grade{
                 float: left;
-                box-sizing: border-box;             /*make border inside div so the border does not add left and a right border to the div*/
-                border: 1px solid white;
+                border-radius: 32px;
                 position: relative;
                 font-size: 15px;
                 width: 33%;
@@ -77,68 +95,80 @@
                 text-indent: 30px;
             }
 
+            .clear{
+                clear:both;
+                display: block;
+            }
+
+            .clear:after{
+                position: static;
+            }
+
         </style>
     <head>
     <body>
-        <div class="grade red">
-            <h1 class="headline">First Grade</h1>
+        <div id="container">
+            <div class="grade red">
+                <h1 class="headline">First Grade</h1>
 
-            <div>
-                <h3> Principles</h3>
+                <div>
+                    <h3> Principles</h3>
 
-                <ol>
-                    <li>Don't repeat yourself (DRY)</li>
-                    <li>Keep it simple and stupid (KISS)</li>
-                    <li>Beware of optimizations</li>
-                    <li>Favour Composition over Inheritance (FCol)</li>
-                    <li>Integration Operation Segregation Principle (IOSP)</li>
-                </ol>
-
-            </div>
-
-            <div>
-                <h3> Practices</h3>
                     <ol>
-                        <li>Boy Scout Rule</li>
-                        <li>Root Cause Analysis</li>
-                        <li>Use Version Control</li>
-                        <li>Use Simple Refactoring Patterns </li>
-                        <li>Daily Reflection</li>
+                        <li>Don't repeat yourself (DRY)</li>
+                        <li>Keep it simple and stupid (KISS)</li>
+                        <li>Beware of optimizations</li>
+                        <li>Favour Composition over Inheritance (FCol)</li>
+                        <li>Integration Operation Segregation Principle (IOSP)</li>
                     </ol>
+
+                </div>
+
+                <div>
+                    <h3> Practices</h3>
+                        <ol>
+                            <li>Boy Scout Rule</li>
+                            <li>Root Cause Analysis</li>
+                            <li>Use Version Control</li>
+                            <li>Use Simple Refactoring Patterns </li>
+                            <li>Daily Reflection</li>
+                        </ol>
+                </div>
+                <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grrades/grade-1-red/">clean-code-developer.de</a>
+                <div class="clear"></div>
             </div>
-            <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grrades/grade-1-red/">clean-code-developer.de</a>
-        </div>
 
-        <div class="grade orange">
-            <h1 class="headline">Second Grade</h1>
+            <div class="grade orange">
+                <h1 class="headline">Second Grade</h1>
 
-            <div>
-                <h3> Principles</h3>
+                <div>
+                    <h3> Principles</h3>
                     <ol>
                         <li>Single Level of Abstraction (SLA)</li>
                         <li>Single Responsibility Principle (SRP)</li>
                         <li>Seperation of Concerns (SoC)</li>
                         <li>Source Code Conventions</li>
                     </ol>
-            </div>
+                </div>
 
-            <div>
-                <h3> Practices</h3>
+                <div>
+                    <h3> Practices</h3>
                     <ol>
                         <li>Issue Tracking</li>
                         <li>Automatized Integration Tests</li>
                         <li>Read, Read, Read</li>
                         <li>Reviews</li>
                     </ol>
+                </div>
+                <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grades/grade-2-orange/">clean-code-developer.de</a>
+                <div class="clear"></div>
             </div>
-            <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grades/grade-2-orange/">clean-code-developer.de</a>
-        </div>
 
-        <div class="grade yellow">
-            <h1 class="headline">Third Grade</h1>
+            <div class="grade yellow">
+                <h1 class="headline">Third Grade</h1>
 
-            <div>
-                <h3> Principles</h3>
+                <div>
+                    <h3> Principles</h3>
                     <ol>
                         <li>Integration Segregation Principle (ISP)</li>
                         <li>Dependency Inversion Principle (DIP)</li>
@@ -146,10 +176,10 @@
                         <li>Principle of Least Astonishment</li>
                         <li>Information Hiding Principle</li>
                     </ol>
-            </div>
+                </div>
 
-            <div>
-                <h3> Practices</h3>
+                <div>
+                    <h3> Practices</h3>
                     <ol>
                         <li>Automatized Unit Tests</li>
                         <li>Mockups (Testdummies)</li>
@@ -157,25 +187,25 @@
                         <li>Participation in Professional Events</li>
                         <li>Complex Refactorings</li>
                     </ol>
+                </div>
+                <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grades/grade-3-yellow/">clean-code-developer.de</a>
+                <div class="clear"></div>
             </div>
-            <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grades/grade-3-yellow/">clean-code-developer.de</a>
-        </div>
 
-        <div class="grade green">
-            <h1 class="headline">Fourth Grade</h1>
+            <div class="grade green">
+                <h1 class="headline">Fourth Grade</h1>
 
-            <div>
-                <h3> Principles</h3>
-
+                <div>
+                    <h3> Principles</h3>
                     <ol>
                         <li>Open Closed Principle</li>
                         <li>Tell, don't ask</li>
                         <li>Law of Demeter</li>
                     </ol>
-            </div>
+                </div>
 
-            <div>
-                <h3> Practices</h3>
+                <div>
+                    <h3> Practices</h3>
                     <ol>
                         <li>Continous Integration</li>
                         <li>Static Code Analysis (Metrics)</li>
@@ -183,40 +213,44 @@
                         <li>Share Experience</li>
                         <li>Error Measurement</li>
                     </ol>
-            </div>
-            <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grrades/grade-4-green/">clean-code-developer.de</a>
-        </div>
-
-        <div class="grade blue">
-            <h1 class="headline">Fifth Grade</h1>
-
-            <div>
-                <h3> Principles</h3>
-                <ol>
-                    <li>Design and Implementation don't overlap</li>
-                    <li>Implementaion reflects Design</li>
-                    <li>You Ain't Gonna Need It (YAGNI)</li>
-                </ol>
+                </div>
+                <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grrades/grade-4-green/">clean-code-developer.de</a>
+                <div class="clear"></div>
             </div>
 
-            <div>
-                <h3> Practices</h3>
-                <ol>
-                    <li>1. Continuous Delivery</li>
-                    <li>2. Iterative Development</li>
-                    <li>3. Component Orientation</li>
-                    <li>4. Test first</li>
-                </ol>
+            <div class="grade blue">
+                <h1 class="headline">Fifth Grade</h1>
+
+                <div>
+                    <h3> Principles</h3>
+                    <ol>
+                        <li>Design and Implementation don't overlap</li>
+                        <li>Implementaion reflects Design</li>
+                        <li>You Ain't Gonna Need It (YAGNI)</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3> Practices</h3>
+                    <ol>
+                        <li>1. Continuous Delivery</li>
+                        <li>2. Iterative Development</li>
+                        <li>3. Component Orientation</li>
+                        <li>4. Test first</li>
+                    </ol>
+                </div>
+                <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grades/grade-5-blue/">clean-code-developer.de</a>
+                <div class="clear"></div>
             </div>
-            <a class="cc_link" target="_blank" href="http://clean-code-developer.com/grades/grade-5-blue/">clean-code-developer.de</a>
-        </div>
 
-        <div class="grade white">
-            <h1 class="headline_black">Sixth Grade</h1>
+            <div class="grade white">
+                <h1 class="headline_black">Sixth Grade</h1>
 
-                    <h4 class="center_principle">Start from First Grade again</h4>
+                <h4 class="center_principle">Start from First Grade again</h4>
 
-           <a class="cc_link" style="color: black" target="_blank" href="http://clean-code-developer.com/grades/grade-6-white/">clean-code-developer.de</a>
+               <a class="cc_link" style="color: black" target="_blank" href="http://clean-code-developer.com/grades/grade-6-white/">clean-code-developer.de</a>
+                <div class="clear"></div>
+            </div>
         </div>
     </body>
 </html>
