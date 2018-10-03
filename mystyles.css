@@ -1,0 +1,100 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+#container {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.headline {
+    padding-top: 20px;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    border-bottom: 3px solid white;
+    text-indent: 0;
+}
+
+.headline_black {
+    padding-top: 20px;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    border-bottom: 3px solid black;
+    text-indent: 0;
+}
+
+.center_principle {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cc_link {
+    float: right;
+    color: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    right: 40px;
+}
+
+.red {
+    background: #800000;
+    color: #ffffff;
+}
+
+.orange {
+    background: #cc5200;
+    color: #ffffff;
+}
+
+.yellow {
+    background: #cccc00;
+    color: #ffffff;
+}
+
+.green {
+    background: #008000;
+    color: #ffffff;
+}
+
+.blue {
+    background: #000080;
+    color: #ffffff;
+}
+
+.white {
+    background: #ece9e9;
+    color: #000000;
+}
+
+.grade {
+    float: left;
+    border-radius: 32px;
+    position: relative;
+    font-size: 15px;
+    width: 33%;
+    height: 50%;
+    text-indent: 30px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+.clear:after {
+    position: static;
+}
