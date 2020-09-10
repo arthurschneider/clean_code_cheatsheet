@@ -1,40 +1,30 @@
-html,
-body {
-    width: 100%;
+html, body{
     height: 100%;
     margin: 0;
-    padding: 0;
     background: black;
 }
 
-#container {
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow: auto;
+.grid-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item{
+    border-radius: 25px;
+    padding-color: black;
+    padding: 20px;
 }
 
 .headline {
-    padding-top: 20px;
     text-align: center;
-    width: 350px;
-    margin: auto;
     border-bottom: 3px solid white;
-    text-indent: 0;
 }
 
 .headline_black {
-    padding-top: 20px;
     text-align: center;
-    width: 350px;
-    margin: auto;
     border-bottom: 3px solid black;
-    text-indent: 0;
 }
 
 .center_principle {
@@ -44,10 +34,7 @@ body {
 
 .cc_link {
     float: right;
-    color: #ffffff;
-    position: absolute;
-    bottom: 8px;
-    right: 40px;
+    margin-bottom: auto;
 }
 
 .red {
@@ -80,21 +67,3 @@ body {
     color: #000000;
 }
 
-.grade {
-    float: left;
-    border-radius: 32px;
-    position: relative;
-    font-size: 15px;
-    width: 33%;
-    height: 50%;
-    text-indent: 30px;
-}
-
-.clear {
-    clear: both;
-    display: block;
-}
-
-.clear:after {
-    position: static;
-}
