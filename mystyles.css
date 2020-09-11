@@ -1,69 +1,75 @@
-html, body{
-    height: 100%;
-    margin: 0;
-    background: black;
+html, body {
+	height: 100%;
+	margin: 0;
+	background: black;
 }
 
-.grid-container{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
+.grid-container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
 
-.grid-item{
-    border-radius: 25px;
-    padding-color: black;
-    padding: 20px;
+.grid-item {
+	border-radius: 15px;
+	padding-color: black;
+	padding: 20px;
+	position: relative;
 }
 
 .headline {
-    text-align: center;
-    border-bottom: 3px solid white;
+	text-align: center;
+	border-bottom: 3px solid white;
 }
 
 .headline_black {
-    text-align: center;
-    border-bottom: 3px solid black;
+	text-align: center;
+	border-bottom: 3px solid black;
 }
 
 .center_principle {
-    text-align: center;
-    padding-top: 40px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.sticky-bottom {
+	position: absolute;
+	bottom: 2px;
+	right: 7%;
 }
 
 .cc_link {
-    float: right;
-    margin-bottom: auto;
+	float: right;
+	margin-bottom: auto;
 }
 
 .red {
-    background: #800000;
-    color: #ffffff;
+	background: #800000;
+	color: #ffffff;
 }
 
 .orange {
-    background: #cc5200;
-    color: #ffffff;
+	background: #cc5200;
+	color: #ffffff;
 }
 
 .yellow {
-    background: #cccc00;
-    color: #ffffff;
+	background: #cccc00;
+	color: #ffffff;
 }
 
 .green {
-    background: #008000;
-    color: #ffffff;
+	background: #008000;
+	color: #ffffff;
 }
 
 .blue {
-    background: #000080;
-    color: #ffffff;
+	background: #000080;
+	color: #ffffff;
 }
 
 .white {
-    background: #ece9e9;
-    color: #000000;
+	background: #ece9e9;
+	color: #000000;
 }
-
