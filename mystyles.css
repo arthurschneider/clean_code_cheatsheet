@@ -1,13 +1,13 @@
 html, body {
 	height: 100%;
 	margin: 0;
-	background: black;
 }
 
 .grid-container {
 	width: 100%;
 	height: 100%;
 	display: grid;
+	background: #1a1a1a;
 	grid-template-columns: auto auto auto;
 }
 
@@ -16,16 +16,15 @@ html, body {
 	padding-color: black;
 	padding: 20px;
 	position: relative;
+	color: #d2e0e0;
 }
 
 .headline {
 	text-align: center;
-	border-bottom: 3px solid white;
 }
 
-.headline_black {
-	text-align: center;
-	border-bottom: 3px solid black;
+.item-content{
+	padding-left: 20px;
 }
 
 .center_principle {
@@ -39,37 +38,48 @@ html, body {
 	right: 7%;
 }
 
-.cc_link {
-	float: right;
-	margin-bottom: auto;
+a:link, a:visited {
+	color: #D3D3D3;
+}
+
+a:hover {
+	font-weight: bold;
+	color: #FFFFFF;
 }
 
 .red {
-	background: #800000;
-	color: #ffffff;
+	border-bottom: 10px solid #b30000;
+	border-image: linear-gradient(to left, #b30000 0%, #ff4d4d 100%);
+	border-image-slice: 1;
 }
 
 .orange {
-	background: #cc5200;
-	color: #ffffff;
+	border-bottom: 10px solid #cc7a00;
+	border-image: linear-gradient(to left, #cc7a00 0%, #ffc266 100%);
+	border-image-slice: 1;
 }
 
 .yellow {
-	background: #cccc00;
-	color: #ffffff;
+	border-bottom: 10px solid #e6e600;
+	border-image: linear-gradient(to left, #e6e600 0%, #ffff80 100%);
+	border-image-slice: 1;
 }
 
 .green {
-	background: #008000;
-	color: #ffffff;
+	border-bottom: 10px solid #00cc00;
+	border-image: linear-gradient(to left, #00cc00 0%, #80ff80 100%);
+	border-image-slice: 1;
 }
 
 .blue {
-	background: #000080;
-	color: #ffffff;
+	border-bottom: 10px solid #002699;
+	border-image: linear-gradient(to left, #002699 0%, #668cff 100%);
+	border-image-slice: 1;
 }
 
 .white {
-	background: #ece9e9;
-	color: #000000;
+	
+	border-bottom: 10px solid #a6a6a6;
+	border-image: linear-gradient(to left, #a6a6a6 0%, #f2f2f2 100%);
+	border-image-slice: 1;
 }
